@@ -25,6 +25,14 @@ SECRET_KEY = '=#)tc9e!unnwxabjx5ny(97x_297f$g84i8k0oz%%9_bqr%%jr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER ='sabantu.u@gmail.com'
+EMAIL_HOST_PASSWORD = '&&@468dbj#%'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
 ALLOWED_HOSTS = []
 
 
