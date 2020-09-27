@@ -8,7 +8,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{% static './css/style.css' %}">  
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <!-- Main Js -->
+    <script defer src="{% static 'js/app.js'%}"></script>
     <title>Sabantu</title>
 </head>
 <body>
@@ -40,13 +42,22 @@
         </nav>
     </header>
 
+
+    
+</body>
+
+    
     <main>
         {% block content %}
 		{% endblock%}
     </main>
 
     <footer>
-        <p>&copy; 2020 Sabantu Yusuf</p>
+        <div>
+            <p class="is-size-5"> 
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script><strong class="blue"><a href="{% url 'home' %}"> Sabantu Yusuf</strong></a>
+            </p>
+        </div>
     </footer>
-</body>
+
 </html>

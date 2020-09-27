@@ -3,13 +3,25 @@
 
 
 <bodY>
-    <h1>Contact Form</h1>
 
-    <form action="" method="POST" >
+
+    <!-- <form action="" method="POST" >
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit"/>
-    </form>
+    </form> -->
+
+    <section id="contact" class="container" >
+        <form action="" method="POST">
+            <h2>Contacnt Sabantu</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- <input type="submit" value="Submit"/> -->
+        <button type="submit" class="sendBut" name="send">Send Message</button>
+        </form>
+    </section>
+
+
 </bodY>
 
 
