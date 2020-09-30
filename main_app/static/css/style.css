@@ -208,6 +208,13 @@ input, textarea {
 }
 
 
+
+/* Project */
+.project-container {
+    width: 20px;
+}
+
+
 /*
 * Footer
 ***************************************************/
